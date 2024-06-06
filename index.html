@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <title>AI Brazilian recipe generator</title>
   </head>
   <body>
@@ -12,7 +14,7 @@
         <h1>Welcome to the AI Brazilian recipe Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="recipe-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of Brazilian recipes"
@@ -23,15 +25,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="recipe">
-          Brigadeiro
-          <br />
-          Ingredients:
-          <br />
-
-          1 tablespoon butter 14, sweetened condensed milk(395 g), ¼ cup cocoa
-          powder(30 g), 1 cup chocolate sprinkle(160 g), as needed
-        </div>
+        <div class="recipe" id="recipe"></div>
       </main>
 
       <footer>
